@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Dr. Sarah Mitchell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon"><i class="fas fa-tooth"></i></div>
+            <div class="preloader-text">Dr. Mitchell</div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-slice"></div><div class="transition-slice"></div><div class="transition-slice"></div><div class="transition-slice"></div><div class="transition-slice"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>Dr. Mitchell</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-btn">Book Appointment</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our <span class="highlight">Services</span></h1>
+            <p>Comprehensive dental care tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section class="services-full">
+        <div class="container">
+            <div class="service-detail" id="general">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&h=400&fit=crop" alt="General Dentistry">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h2>General Dentistry</h2>
+                    <p>Our general dentistry services form the foundation of your oral health. We provide comprehensive examinations, professional cleanings, and preventive treatments to keep your smile in perfect condition.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Comprehensive Oral Exams</li>
+                        <li><i class="fas fa-check"></i> Professional Teeth Cleaning</li>
+                        <li><i class="fas fa-check"></i> Dental Fillings & Restorations</li>
+                        <li><i class="fas fa-check"></i> Root Canal Therapy</li>
+                        <li><i class="fas fa-check"></i> Gum Disease Treatment</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+
+            <div class="service-detail reverse" id="cosmetic">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&h=400&fit=crop" alt="Cosmetic Dentistry">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h2>Cosmetic Dentistry</h2>
+                    <p>Transform your smile with our advanced cosmetic procedures. From subtle enhancements to complete smile makeovers, we use the latest techniques to deliver stunning, natural-looking results.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Professional Teeth Whitening</li>
+                        <li><i class="fas fa-check"></i> Porcelain Veneers</li>
+                        <li><i class="fas fa-check"></i> Dental Bonding</li>
+                        <li><i class="fas fa-check"></i> Smile Makeovers</li>
+                        <li><i class="fas fa-check"></i> Gum Contouring</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+
+            <div class="service-detail" id="orthodontics">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=400&fit=crop" alt="Orthodontics">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h2>Orthodontics</h2>
+                    <p>Achieve perfectly aligned teeth with our orthodontic solutions. Whether you prefer traditional braces or the discreet option of Invisalign, we'll create a customized treatment plan for your ideal smile.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Invisalign Clear Aligners</li>
+                        <li><i class="fas fa-check"></i> Traditional Metal Braces</li>
+                        <li><i class="fas fa-check"></i> Ceramic Braces</li>
+                        <li><i class="fas fa-check"></i> Retainers & Maintenance</li>
+                        <li><i class="fas fa-check"></i> Bite Correction</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+
+            <div class="service-detail reverse" id="implants">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop" alt="Dental Implants">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h2>Dental Implants</h2>
+                    <p>Replace missing teeth with permanent, natural-looking dental implants. Our implant procedures use titanium posts that fuse with your jawbone, providing a stable foundation for replacement teeth.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Single Tooth Implants</li>
+                        <li><i class="fas fa-check"></i> Implant-Supported Bridges</li>
+                        <li><i class="fas fa-check"></i> All-on-4 Implants</li>
+                        <li><i class="fas fa-check"></i> Bone Grafting</li>
+                        <li><i class="fas fa-check"></i> Mini Dental Implants</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+
+            <div class="service-detail" id="emergency">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=400&fit=crop" alt="Emergency Dental Care">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <h2>Emergency Dental Care</h2>
+                    <p>Dental emergencies can happen anytime. We offer same-day emergency appointments to address urgent dental issues quickly and effectively, minimizing pain and preventing further damage.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Toothache Relief</li>
+                        <li><i class="fas fa-check"></i> Broken Tooth Repair</li>
+                        <li><i class="fas fa-check"></i> Knocked-Out Tooth Treatment</li>
+                        <li><i class="fas fa-check"></i> Abscess Treatment</li>
+                        <li><i class="fas fa-check"></i> Lost Crown or Filling</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+
+            <div class="service-detail reverse" id="pediatric">
+                <div class="service-detail-img">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&h=400&fit=crop" alt="Pediatric Dentistry">
+                </div>
+                <div class="service-detail-content">
+                    <div class="service-detail-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h2>Pediatric Dentistry</h2>
+                    <p>We make dental visits fun and stress-free for children. Our kid-friendly approach ensures your little ones develop healthy dental habits and positive associations with dental care from an early age.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Children's Check-ups</li>
+                        <li><i class="fas fa-check"></i> Dental Sealants</li>
+                        <li><i class="fas fa-check"></i> Fluoride Treatments</li>
+                        <li><i class="fas fa-check"></i> Space Maintainers</li>
+                        <li><i class="fas fa-check"></i> Early Orthodontic Assessment</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Book This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Transparent Pricing</p>
+                <h2>Insurance & Payment Options</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>We Accept</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Most Major Insurance Plans</li>
+                        <li><i class="fas fa-check-circle"></i> Delta Dental</li>
+                        <li><i class="fas fa-check-circle"></i> Cigna</li>
+                        <li><i class="fas fa-check-circle"></i> Aetna</li>
+                        <li><i class="fas fa-check-circle"></i> MetLife</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Payment Plans</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 0% Interest Financing</li>
+                        <li><i class="fas fa-check-circle"></i> CareCredit Accepted</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible Monthly Payments</li>
+                        <li><i class="fas fa-check-circle"></i> No Hidden Fees</li>
+                        <li><i class="fas fa-check-circle"></i> Free Consultation</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Membership Plan</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> $29/month for Individuals</li>
+                        <li><i class="fas fa-check-circle"></i> 2 Cleanings Per Year</li>
+                        <li><i class="fas fa-check-circle"></i> Annual X-Rays Included</li>
+                        <li><i class="fas fa-check-circle"></i> 15% Off All Procedures</li>
+                        <li><i class="fas fa-check-circle"></i> No Waiting Periods</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need a Dental Service?</h2>
+            <p>Contact us today to discuss your needs and schedule your appointment.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Book Appointment</a>
+                <a href="tel:+15551234567" class="btn btn-outline-white"><i class="fas fa-phone"></i> (555) 123-4567</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>Dr. Mitchell</span>
+                    </div>
+                    <p>Providing exceptional dental care with a gentle touch. Your comfort and health are our top priorities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#general">General Dentistry</a></li>
+                        <li><a href="#cosmetic">Cosmetic Dentistry</a></li>
+                        <li><a href="#orthodontics">Orthodontics</a></li>
+                        <li><a href="#implants">Dental Implants</a></li>
+                        <li><a href="#emergency">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Smile Avenue, Suite 200<br>New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@drmitchell.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Sarah Mitchell Dental Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Particles -->
+    <canvas id="particles" class="particles-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

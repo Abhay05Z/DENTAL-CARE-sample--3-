@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sarah Mitchell | Premier Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <i class="fas fa-tooth"></i>
+            </div>
+            <div class="preloader-text">Dr. Mitchell</div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+        <div class="transition-slice"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>Dr. Mitchell</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav-btn">Book Appointment</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">Welcome to Premier Dental Care</p>
+                <h1>Your Smile Is Our <span class="highlight">Priority</span></h1>
+                <p class="hero-description">Dr. Sarah Mitchell brings over 15 years of experience in cosmetic and general dentistry. We combine cutting-edge technology with compassionate care to give you the perfect smile.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Happy Patients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=700&fit=crop&crop=face" alt="Dr. Sarah Mitchell">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rated Dentist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What We Offer</p>
+                <h2>Our Dental Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3>General Dentistry</h3>
+                    <p>Comprehensive check-ups, cleanings, and preventive care to keep your teeth healthy and strong.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Teeth whitening, veneers, and smile makeovers to enhance your natural beauty.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Orthodontics</h3>
+                    <p>Invisalign and traditional braces for perfectly aligned teeth at any age.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent tooth replacement solutions that look and feel like natural teeth.</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop&crop=face" alt="Dr. Mitchell at work" class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=250&h=300&fit=crop&crop=face" alt="Dental office" class="about-img-secondary">
+                </div>
+                <div class="about-text">
+                    <p class="section-subtitle">About Dr. Mitchell</p>
+                    <h2>Dedicated to Your Dental Health</h2>
+                    <p>With a degree from Harvard School of Dental Medicine and extensive training in cosmetic procedures, Dr. Sarah Mitchell has been transforming smiles since 2009.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Harvard School of Dental Medicine Graduate</li>
+                        <li><i class="fas fa-check-circle"></i> American Dental Association Member</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Cosmetic Dentistry Certified</li>
+                        <li><i class="fas fa-check-circle"></i> Invisalign Platinum Provider</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary">Read Full Bio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Patient Reviews</p>
+                <h2>What Our Patients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Dr. Mitchell completely transformed my smile. I had been self-conscious for years, and now I can't stop smiling!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Patient">
+                        <div>
+                            <strong>Emily Rodriguez</strong>
+                            <span>Cosmetic Patient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The most comfortable dental experience I've ever had. The whole team is incredibly professional and caring."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient">
+                        <div>
+                            <strong>James Thompson</strong>
+                            <span>Regular Patient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"My kids actually look forward to their dental visits now. Dr. Mitchell is amazing with children!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patient">
+                        <div>
+                            <strong>Lisa Chen</strong>
+                            <span>Family Patient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Why Choose Us</p>
+                <h2>The Dr. Mitchell Difference</h2>
+            </div>
+            <div class="choose-grid">
+                <div class="choose-card" data-anim="slide-up">
+                    <div class="choose-number">01</div>
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>We use the latest digital X-rays, 3D imaging, and laser dentistry for precise, comfortable treatments.</p>
+                </div>
+                <div class="choose-card" data-anim="slide-up">
+                    <div class="choose-number">02</div>
+                    <h3>Painless Experience</h3>
+                    <p>Advanced sedation options and gentle techniques ensure a comfortable, anxiety-free visit every time.</p>
+                </div>
+                <div class="choose-card" data-anim="slide-up">
+                    <div class="choose-number">03</div>
+                    <h3>Same-Day Treatments</h3>
+                    <p>Get crowns, veneers, and other restorations in a single visit with our CEREC technology.</p>
+                </div>
+                <div class="choose-card" data-anim="slide-up">
+                    <div class="choose-number">04</div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Early morning, evening, and Saturday appointments available to fit your busy lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After -->
+    <section class="before-after-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Transformations</p>
+                <h2>Before & After Results</h2>
+            </div>
+            <div class="ba-grid">
+                <div class="ba-card" data-anim="zoom-in">
+                    <div class="ba-slider" data-before="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&h=350&fit=crop" data-after="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=500&h=350&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=500&h=350&fit=crop" alt="After" class="ba-after">
+                        <div class="ba-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&h=350&fit=crop" alt="Before" class="ba-before">
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
+                            <div class="ba-handle-line"></div>
+                        </div>
+                    </div>
+                    <div class="ba-label"><span>Teeth Whitening</span></div>
+                </div>
+                <div class="ba-card" data-anim="zoom-in">
+                    <div class="ba-slider" data-before="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&h=350&fit=crop" data-after="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=500&h=350&fit=crop">
+                        <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=500&h=350&fit=crop" alt="After" class="ba-after">
+                        <div class="ba-before-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&h=350&fit=crop" alt="Before" class="ba-before">
+                        </div>
+                        <div class="ba-handle">
+                            <div class="ba-handle-line"></div>
+                            <div class="ba-handle-circle"><i class="fas fa-arrows-alt-h"></i></div>
+                            <div class="ba-handle-line"></div>
+                        </div>
+                    </div>
+                    <div class="ba-label"><span>Porcelain Veneers</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Your Best Smile?</h2>
+            <p>Schedule your consultation today and take the first step towards the smile you've always wanted.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">Book Appointment</a>
+                <a href="tel:+15551234567" class="btn btn-outline-white"><i class="fas fa-phone"></i> (555) 123-4567</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>Dr. Mitchell</span>
+                    </div>
+                    <p>Providing exceptional dental care with a gentle touch. Your comfort and health are our top priorities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Dentistry</a></li>
+                        <li><a href="services.html">Cosmetic Dentistry</a></li>
+                        <li><a href="services.html">Orthodontics</a></li>
+                        <li><a href="services.html">Dental Implants</a></li>
+                        <li><a href="services.html">Teeth Whitening</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Smile Avenue, Suite 200<br>New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@drmitchell.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Sarah Mitchell Dental Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Particles -->
+    <canvas id="particles" class="particles-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
