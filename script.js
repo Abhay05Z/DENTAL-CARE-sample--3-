@@ -246,34 +246,37 @@ function initPageAnimations() {
 })();
 
 // ========================================
-// Parallax on Scroll
+// Parallax on Scroll (Desktop only)
 // ========================================
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
+if (window.innerWidth > 768 && !('ontouchstart' in window)) {
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
 
-    // Hero parallax
-    const heroImage = document.querySelector('.hero-image img');
-    if (heroImage && scrollY < window.innerHeight) {
-        heroImage.style.transform = `translateY(${scrollY * 0.15}px)`;
-    }
-
-    // About section parallax
-    const aboutImgMain = document.querySelector('.about-img-main');
-    const aboutImgSec = document.querySelector('.about-img-secondary');
-    if (aboutImgMain) {
-        const rect = aboutImgMain.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            const offset = (window.innerHeight - rect.top) * 0.04;
-            aboutImgMain.style.transform = `translateY(${-offset}px)`;
-            if (aboutImgSec) aboutImgSec.style.transform = `translateY(${offset * 0.5}px)`;
+        const heroImage = document.querySelector('.hero-image img');
+        if (heroImage && scrollY < window.innerHeight) {
+            heroImage.style.transform = `translateY(${scrollY * 0.15}px)`;
         }
-    }
-});
+
+        const aboutImgMain = document.querySelector('.about-img-main');
+        const aboutImgSec = document.querySelector('.about-img-secondary');
+        if (aboutImgMain) {
+            const rect = aboutImgMain.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                const offset = (window.innerHeight - rect.top) * 0.04;
+                aboutImgMain.style.transform = `translateY(${-offset}px)`;
+                if (aboutImgSec) aboutImgSec.style.transform = `translateY(${offset * 0.5}px)`;
+            }
+        }
+    });
+}
 
 // ========================================
 // Tilt Effect on Cards
 // ========================================
 function initTiltEffect() {
+    // Only on desktop (no touch)
+    if ('ontouchstart' in window || window.innerWidth <= 1024) return;
+
     const cards = document.querySelectorAll('.service-card, .choose-card, .testimonial-card');
 
     cards.forEach(card => {
@@ -545,7 +548,8 @@ function animateCounter(element, target) {
 
     const ctx = canvas.getContext('2d');
     let particles = [];
-    const particleCount = 40;
+    const isMobile = window.innerWidth <= 768;
+    const particleCount = isMobile ? 15 : 40;
 
     function resize() {
         canvas.width = window.innerWidth;
